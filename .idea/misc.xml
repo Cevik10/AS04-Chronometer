@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hakan/Desktop/AndroidStudioProjectsWithJava/AS09-RunnableHandler/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/hakan/Desktop/AndroidStudioProjectsWithJava/AS09-RunnableHandler/app/src/main/res/layout/activity_main.xml" value="0.152" />
       </map>
     </option>
   </component>
@@ -12,5 +12,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.152" />
+      </ProjectState>
+    </option>
   </component>
 </project>

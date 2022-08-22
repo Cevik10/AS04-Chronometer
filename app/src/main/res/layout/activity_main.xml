@@ -6,60 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="245dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="162dp"
-        android:layout_marginBottom="64dp"
-        android:text="Time (sec) : 0 "
-        android:textAlignment="center"
-        android:textColor="#15088C"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="233dp"
-        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="83dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="48dp"
-            android:backgroundTint="#209325"
-            android:onClick="start"
-            android:text="Start" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="83dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginEnd="36dp"
-            android:backgroundTint="#BF1616"
-            android:onClick="stop"
-            android:text="Stop" />
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="83dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="40dp"
-            android:backgroundTint="#B59922"
-            android:onClick="reset"
-            android:text="Reset" />
+            android:text="Time (sec) : 0 "
+            android:textAlignment="center"
+            android:textColor="#15088C"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeText">
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_weight="1"
+                android:backgroundTint="#209325"
+                android:onClick="start"
+                android:text="Start" />
+
+            <Button
+                android:id="@+id/stopButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_weight="1"
+                android:backgroundTint="#BF1616"
+                android:onClick="stop"
+                android:text="Stop" />
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#B59922"
+                android:onClick="reset"
+                android:text="Reset" />
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
